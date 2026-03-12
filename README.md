@@ -44,3 +44,17 @@ Here’s what you're required to implement to bring the game to life:
 These are the minimum requirements, but if you'd like an additional challenge go ahead and give the LevelUps a shot! For example, you can set up logic to make some of the drops "bad" drops that remove points if the user click them, complete with a different color to distinguish them from "good" drops. Have fun and make the game your own!
 
 If you have any questions or need any assistance with your code, reach out to the HelpHub or attend a Drop-In Hour. You got this!!
+
+## LevelUps Implemented
+
+- [x] Challenge for Users: Added a falling obstacle that subtracts points when clicked.
+- [x] Game Reset: Added a Reset button so players can restart at any time.
+- [x] Celebrate Wins: Added a confetti celebration when the player wins.
+
+### Where to Find Them
+
+- Obstacle logic and score penalty: `script.js`
+- Reset button UI: `index.html`
+- Reset behavior: `script.js`
+- Confetti trigger and animation logic: `script.js`
+- Obstacle and confetti styling: `styles.css`
