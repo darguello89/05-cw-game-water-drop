@@ -50,6 +50,12 @@ If you have any questions or need any assistance with your code, reach out to th
 - [x] Challenge for Users: Added a falling obstacle that subtracts points when clicked.
 - [x] Game Reset: Added a Reset button so players can restart at any time.
 - [x] Celebrate Wins: Added a confetti celebration when the player wins.
+- [x] Difficulty Modes: Added Easy, Normal, and Hard with different goals, timers, spawn rates, and penalties.
+- [x] DOM Interaction Effects: Clicked cans and obstacles are removed and now trigger visual tap-splash feedback.
+- [x] Charity Links Section: Added footer links to charity: water website and donation page.
+- [x] On-brand Typography: Applied a Montserrat-based sans-serif stack to better match charity: water style.
+- [x] Sound Effects: Added sound hooks for collect, miss, button clicks, and wins.
+- [x] Milestones: Added score milestone messages that trigger through each round.
 
 ### Where to Find Them
 
@@ -58,3 +64,10 @@ If you have any questions or need any assistance with your code, reach out to th
 - Reset behavior: `script.js`
 - Confetti trigger and animation logic: `script.js`
 - Obstacle and confetti styling: `styles.css`
+- Difficulty selector UI: `index.html`
+- Difficulty mode behavior and pacing rules: `script.js`
+- Footer charity links: `index.html`
+- New UI and font styles: `styles.css`
+- Sound playback + fallback tone system: `script.js`
+- Milestone rules and trigger logic: `script.js`
+- Sound file placement guide: `audio/README.md`

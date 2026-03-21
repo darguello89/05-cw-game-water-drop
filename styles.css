@@ -22,7 +22,7 @@ body {
     min-height: 100vh;
     padding: 16px;
     background: radial-gradient(circle at top, #e9f8ff 0%, #d8efff 45%, #f6fbff 100%);
-    font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+    font-family: "Montserrat", "Avenir Next", Avenir, "Century Gothic", sans-serif;
     color: var(--cw-dark);
 }
 
@@ -57,6 +57,34 @@ body {
     flex: 0 1 auto;
     font-size: clamp(20px, 2.8vw, 26px);
     font-weight: bold;
+}
+
+.difficulty-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+#difficulty-select {
+    border: 2px solid var(--cw-blue);
+    border-radius: 8px;
+    padding: 8px 10px;
+    background: #ffffff;
+    color: var(--cw-dark);
+    font-weight: 700;
+    font-family: inherit;
+}
+
+#difficulty-select:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.mode-goal {
+    min-height: 24px;
+    font-weight: 700;
+    color: var(--cw-dark);
 }
 
 #game-container {
@@ -236,6 +264,26 @@ body {
     color: var(--cw-red);
 }
 
+.tap-splash {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    margin-top: -12px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: tapSplash 360ms ease-out forwards;
+    z-index: 4;
+}
+
+.tap-splash.good {
+    border: 3px solid var(--cw-green);
+}
+
+.tap-splash.bad {
+    border: 3px solid var(--cw-red);
+}
+
 #confetti-layer {
     position: fixed;
     inset: 0;
@@ -282,6 +330,43 @@ body {
         transform: translateY(110vh) rotate(720deg);
         opacity: 0.85;
     }
+}
+
+@keyframes tapSplash {
+    from {
+        opacity: 0.9;
+        transform: scale(0.4);
+    }
+    to {
+        opacity: 0;
+        transform: scale(2.4);
+    }
+}
+
+.cw-footer {
+    width: min(980px, 96vw);
+    margin: 10px auto 0;
+    padding: 10px 14px 14px;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.cw-links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.cw-links a {
+    color: var(--cw-blue);
+    font-weight: 700;
+    text-decoration-thickness: 2px;
+}
+
+.cw-links a:hover {
+    color: var(--cw-dark);
 }
 
 @media (max-width: 850px) {
